@@ -173,8 +173,8 @@ class ActionableRecommendations:
         
         ui_issues = {
             'navigation': ['conduct usability testing', 'redesign navigation flow', 'improve information architecture'],
-            'design': 'perform design audit', 'update visual design system', 'implement responsive design',
-            'usability': 'simplify user interface', 'reduce cognitive load', 'improve accessibility'
+            'design': ['perform design audit', 'update visual design system', 'implement responsive design'],
+            'usability': ['simplify user interface', 'reduce cognitive load', 'improve accessibility']
         }
         
         for issue_type, action_list in ui_issues.items():
@@ -194,8 +194,8 @@ class ActionableRecommendations:
         
         feature_issues = {
             'missing_feature': ['conduct feature research', 'prioritize feature roadmap', 'develop mvp'],
-            'broken_feature': 'fix bugs', 'improve reliability', 'enhance functionality'],
-            'feature_request': 'evaluate feasibility', 'create prototype', 'gather user feedback']
+            'broken_feature': ['fix bugs', 'improve reliability', 'enhance functionality'],
+            'feature_request': ['evaluate feasibility', 'create prototype', 'gather user feedback']
         }
         
         for issue_type, action_list in feature_issues.items():
@@ -215,8 +215,8 @@ class ActionableRecommendations:
         
         performance_issues = {
             'slow_performance': ['optimize code', 'upgrade infrastructure', 'implement caching'],
-            'reliability': 'improve error handling', 'add monitoring', 'enhance testing'],
-            'scalability': 'implement load balancing', 'optimize database', 'scale infrastructure']
+            'reliability': ['improve error handling', 'add monitoring', 'enhance testing'],
+            'scalability': ['implement load balancing', 'optimize database', 'scale infrastructure']
         }
         
         for issue_type, action_list in performance_issues.items():
@@ -235,8 +235,8 @@ class ActionableRecommendations:
         actions = []
         
         support_issues = {
-            'customer_support': 'improve response time', 'enhance knowledge base', 'implement chatbot',
-            'documentation': 'create better guides', 'add video tutorials', 'improve faq'
+            'customer_support': ['improve response time', 'enhance knowledge base', 'implement chatbot'],
+            'documentation': ['create better guides', 'add video tutorials', 'improve faq']
         }
         
         for issue_type, action_list in support_issues.items():
@@ -255,8 +255,8 @@ class ActionableRecommendations:
         actions = []
         
         pricing_issues = {
-            'price_too_high': 'conduct price analysis', 'review value proposition', 'consider tiered pricing',
-            'pricing_confusion': 'simplify pricing structure', 'improve cost communication', 'add price calculator'
+            'price_too_high': ['conduct price analysis', 'review value proposition', 'consider tiered pricing'],
+            'pricing_confusion': ['simplify pricing structure', 'improve cost communication', 'add price calculator']
         }
         
         for issue_type, action_list in pricing_issues.items():
@@ -294,9 +294,9 @@ class ActionableRecommendations:
         
         strategic_mappings = {
             'technical': ['invest in technical debt reduction', 'upgrade infrastructure', 'implement best practices'],
-            'user': 'improve user experience', 'conduct user research', 'enhance onboarding'],
-            'business': 'optimize business processes', 'review strategic alignment', 'improve go-to-market'],
-            'environmental': 'monitor market trends', 'adapt to regulatory changes', 'optimize for scalability']
+            'user': ['improve user experience', 'conduct user research', 'enhance onboarding'],
+            'business': ['optimize business processes', 'review strategic alignment', 'improve go-to-market'],
+            'environmental': ['monitor market trends', 'adapt to regulatory changes', 'optimize for scalability']
         }
         
         action_list = strategic_mappings.get(factor_type, ['conduct comprehensive analysis'])
